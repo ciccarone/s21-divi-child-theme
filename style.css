@@ -1,0 +1,454 @@
+/*---------------------------------------------------------------------------------
+
+ Theme Name:   S21 Divi Child Theme
+ Theme URI:    https://solutions21.com
+ Description:  Divi Child Theme for Solutions 21
+ Author:       Solutions 21
+ Author URI:   https://solutions21.com
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+------------------------------ ADDITIONAL CSS HERE ------------------------------*/
+.home .et_builder_inner_content, .home #main-content {
+  z-index: 2;
+}
+
+h2 {
+  color: #122c4b !important;
+  font-size: 34px !important;
+}
+h2 sup {
+  bottom: 0.3em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#top-header > .container {
+  padding-top: 0;
+}
+#top-header > .container > #et-info {
+  padding: 1em 0 !important;
+}
+#top-header .menu-item-type-custom a {
+  padding: 1em 1.3em;
+  background-color: #94ae3f;
+  color: white !important;
+}
+
+.front-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .front-hero {
+    min-height: 50vh;
+  }
+}
+@media (min-width: 980px) {
+  .front-hero .et_pb_fullwidth_code {
+    width: 80%;
+  }
+}
+.front-hero .et_pb_code_inner {
+  max-width: 1040px;
+}
+@media (max-width: 1350px) {
+  .front-hero {
+    padding: 1em !important;
+  }
+}
+.front-hero h1 {
+  color: white;
+  margin-bottom: 0.2em;
+  line-height: 1.3em;
+  font-weight: 700 !important;
+}
+@media (min-width: 980px) {
+  .front-hero h1 {
+    font-size: 3.5em;
+  }
+}
+.front-hero h1 strong {
+  font-weight: 700 !important;
+  color: #94ae3f;
+}
+.front-hero .et_pb_more_button {
+  color: white !important;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-right: 1em;
+  cursor: pointer;
+}
+@media (min-width: 980px) {
+  .front-hero .et_pb_more_button {
+    font-size: 1.4em;
+    padding: 0.3em 2em;
+  }
+}
+.front-hero .et_pb_more_button:after {
+  top: 5px;
+}
+@media (min-width: 980px) {
+  .front-hero .et_pb_more_button:after {
+    top: 8px;
+  }
+}
+.front-hero .et_pb_more_button:hover {
+  letter-spacing: 0;
+}
+@media (min-width: 980px) {
+  .front-hero .et_pb_more_button:hover {
+    padding: 0.3em 2em;
+  }
+}
+.front-hero .et_pb_more_button--grey {
+  background-color: #8893ab;
+}
+.front-hero .et_pb_more_button--grey:hover {
+  background-color: #8893ab;
+}
+.front-hero p {
+  color: white;
+  margin-bottom: 1em;
+  line-height: 1.3em;
+  font-weight: 700 !important;
+}
+@media (min-width: 980px) {
+  .front-hero p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 980px) {
+  .vert-center {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.overlapped-header {
+  padding: 4em 4em 10em !important;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+.overlapped-header__inner {
+  max-width: 980px !important;
+  margin: 0 auto;
+}
+.overlapped-header h2 {
+  color: white !important;
+}
+.overlapped-header h3 {
+  color: white;
+  margin-top: 3em;
+  font-family: "Open Sans";
+}
+
+.s21-arrows {
+  display: flex;
+}
+.s21-arrows__intro {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 3em !important;
+}
+.s21-arrows__intro p {
+  margin-top: 1em;
+}
+.s21-arrows__intro h3 {
+  color: #122c4b;
+  font-size: 2.5em;
+}
+.s21-arrows__container {
+  background-color: #f8f7f6;
+  padding-bottom: 0 !important;
+}
+.s21-arrows__container > .et_pb_row {
+  padding-bottom: 0 !important;
+}
+.s21-arrows__container:after {
+  content: "";
+}
+.s21-arrows__container .et_pb_button {
+  text-transform: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.s21-arrows__container .et_pb_button:after {
+  position: relative;
+  top: 2px;
+}
+.s21-arrows__container .et_pb_button:hover {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+@media (max-width: 980px) {
+  .s21-arrows__icons {
+    display: none;
+  }
+  .s21-arrows__columns {
+    flex-direction: column;
+  }
+}
+.s21-arrows__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.s21-arrows__text strong {
+  text-transform: uppercase;
+}
+.s21-arrows__text h3 {
+  color: #122c4b;
+  margin-bottom: 0.5em;
+}
+.s21-arrows__text p {
+  line-height: 1.7em;
+}
+@media (min-width: 980px) {
+  .s21-arrows__text p {
+    max-width: 75%;
+  }
+}
+.s21-arrows__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.s21-arrows__item:first-child:before {
+  background-color: grey;
+  height: 1px;
+  display: block;
+  width: 20px;
+}
+.s21-arrows__item:first-child span {
+  background-color: #122c4b;
+}
+.s21-arrows__item:nth-child(2) span {
+  background-color: #94ae3f;
+}
+.s21-arrows__item:nth-child(3) span {
+  background-color: #546077;
+}
+.s21-arrows__item:nth-child(4) span {
+  background-color: #8a93a8;
+}
+.s21-arrows__item span {
+  height: 40px;
+  width: 54px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.s21-arrows__item span i {
+  font-weight: 500;
+}
+.s21-arrows__item:after {
+  content: "";
+  background-color: grey;
+  height: 1px;
+  display: block;
+  width: 100%;
+}
+
+.blue-block {
+  background-color: #122c4b;
+  color: white;
+  padding: 2.3em;
+  margin: 0 0.3em;
+  border-bottom: 15px solid #8893ab;
+}
+@media (max-width: 980px) {
+  .blue-block {
+    margin-bottom: 2em !important;
+  }
+}
+.blue-block__container {
+  margin-top: -200px;
+  margin-bottom: -100px;
+  background-color: #f8f7f6;
+}
+.blue-block img {
+  margin: 0 auto 1.3em;
+  display: block;
+  max-height: 80px;
+  width: auto;
+}
+.blue-block h3 {
+  color: white;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: flex-end;
+  line-height: 1.3em;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+@media (min-width: 980px) {
+  .blue-block h3 {
+    min-height: 62px;
+  }
+}
+.blue-block p {
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+.blue-block span {
+  display: block;
+}
+@media (min-width: 980px) {
+  .blue-block span {
+    min-height: 160px;
+  }
+}
+.blue-block a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.blue-block a i {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+
+.s21-blocks {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 16px;
+}
+.s21-blocks__item {
+  margin: 0.2em;
+  height: 25px;
+  width: 25px;
+}
+.s21-blocks__item:first-child {
+  background-color: #122c4b;
+}
+.s21-blocks__item:nth-child(2) {
+  background-color: #546077;
+}
+.s21-blocks__item:nth-child(3) {
+  background-color: #8a93a8;
+}
+.s21-blocks__item:nth-child(4) {
+  background-color: #c3c8d0;
+}
+
+.s21-cards {
+  padding: 4em 0;
+}
+.s21-cards__intro {
+  text-align: center;
+  max-width: 991px;
+  margin: 0 auto;
+  margin-bottom: 3em !important;
+}
+.s21-cards__intro p {
+  margin-top: 1em;
+}
+.s21-cards__intro h3 {
+  color: #122c4b;
+  font-size: 2.5em;
+}
+.s21-cards__intro h3 span {
+  color: #94ae3f;
+}
+.s21-cards__text {
+  margin-bottom: 2em !important;
+}
+.s21-cards__text h3 {
+  color: #122c4b;
+  font-size: 1.5em;
+}
+.s21-cards__image:after {
+  content: "";
+  height: 10px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #8893ab;
+  display: block;
+}
+.s21-cards__image > * {
+  width: 100%;
+}
+.s21-cards__image > * img {
+  width: 100%;
+}
+
+.s21-testimonials {
+  background-color: #f8f7f6;
+}
+.s21-testimonials h3 {
+  color: #122c4b;
+  font-size: 2.5em;
+}
+.s21-testimonials h3 span {
+  color: #94ae3f;
+}
+.s21-testimonials .s21-blocks {
+  top: 0;
+  justify-content: flex-start;
+}
+.s21-testimonials .et_pb_row {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .s21-testimonials .et_pb_row {
+    flex-direction: column;
+  }
+}
+.s21-testimonials .slick-slide {
+  margin-bottom: 0 !important;
+}
+.s21-testimonials .slick-dots li button:before {
+  width: 0;
+  font-size: 10px;
+}
+.s21-testimonials .slick-dots {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+}
+.s21-testimonials .slick-dots li {
+  margin: 0;
+}
+
+@media (min-width: 980px) {
+  .s21-cta__intro {
+    max-width: 70%;
+  }
+}
+.s21-cta__intro h3 {
+  color: white;
+  font-size: 2.5em;
+}
+.s21-cta__intro h3 span {
+  color: #94ae3f;
+}
+.s21-cta__intro p {
+  color: white;
+}
+
+.et-l--footer .et_pb_section {
+  background-color: #122c4b;
+}
+
+/*# sourceMappingURL=style.css.map */
