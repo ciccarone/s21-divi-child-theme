@@ -14,5 +14,8 @@ jQuery(document).ready(function( $ ) {
 
   });
 
+  $('.s21-dd__item').click(function(){
+    $(this).toggleClass('active');
+  })
 
 });

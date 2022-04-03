@@ -53,3 +53,40 @@ function s21_blocks()
 }
 
 add_shortcode('s21_blocks', 's21_blocks');
+
+
+function footer_about_menu() {
+    register_nav_menu('footer-about-menu',__( 'Footer About Menu' ));
+}
+add_action( 'init', 'footer_about_menu' );
+
+
+function pagination_bar() {
+    global $wp_query;
+
+    $total_pages = $wp_query->max_num_pages;
+
+    if ($total_pages > 1){
+        $current_page = max(1, get_query_var('paged'));
+
+        echo paginate_links(array(
+            'base' => get_pagenum_link(1) . '%_%',
+            'format' => '/page/%#%',
+            'current' => $current_page,
+            'total' => $total_pages,
+        ));
+    }
+}
+
+
+function s21_blog_filter()
+{
+	$ret = '';
+	$categories = get_categories();
+	foreach($categories as $category) {
+	   $ret .= '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+	}
+	return $ret;
+}
+
+add_shortcode('s21_blog_filter', 's21_blog_filter');
